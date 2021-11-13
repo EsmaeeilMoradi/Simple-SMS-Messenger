@@ -48,7 +48,7 @@
             style="@style/SettingsSectionLabelStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/notifications" />
+            android:text="notifications" />
 
         <LinearLayout
             android:id="@+id/settings_notifications_holder"
