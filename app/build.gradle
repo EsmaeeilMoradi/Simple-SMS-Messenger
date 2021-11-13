@@ -19,6 +19,9 @@ android {
         versionCode 38
         versionName "5.10.3"
         setProperty("archivesBaseName", "sms-messenger")
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core-ktx:1.6.0' }
+        }
     }
 
     signingConfigs {
@@ -62,6 +65,7 @@ dependencies {
     implementation 'com.github.tibbi:IndicatorFastScroll:c3de1d040a'
     implementation "me.leolin:ShortcutBadger:1.1.22"
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation project(path: ':mycommons')
 
     kapt "androidx.room:room-compiler:2.3.0"
     implementation "androidx.room:room-runtime:2.3.0"
